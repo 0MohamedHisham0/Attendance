@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Students_Screen">
+
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Add_Student_Main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/shape_std"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            android:text="Add New Student"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Students_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp"
+            android:text="34/3"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?colorPrimary"
+
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Subject_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Your Subject"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/shape_std" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/Layout_TextView_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_top"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_std_courners"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/students_screen_bar"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_Student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_bottom"
+        android:layout_below="@id/Layout_TextView_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <LinearLayout
+        android:id="@+id/linear_empty_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chair" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="This Class is empty !!"
+            android:textColor="@color/TextColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

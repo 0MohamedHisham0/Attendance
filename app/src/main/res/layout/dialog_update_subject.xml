@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Class Info"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/TextColor"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20sp"
+        />
+
+    <EditText
+        android:id="@+id/Ed_New_Sub_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_std"
+        android:hint="New Subject Name"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="@color/TextColor" />
+
+
+    <EditText
+        android:id="@+id/Ed_New_Group_Number_ForSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_std"
+        android:hint="New Group Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColorHint="@color/TextColor" />
+
+    <EditText
+        android:id="@+id/Ed_New_Student_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_std"
+        android:hint="New Students Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColorHint="@color/TextColor" />
+
+
+    <Button
+        android:id="@+id/Btn_Update_Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_std"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

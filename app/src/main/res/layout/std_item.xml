@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:id="@+id/Layout_TextView_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_std"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/TextColor" />
+        <TextView
+            android:id="@+id/StdName_item"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:text="Student Name"
+            android:textColor="@color/TextColor"
+            android:textSize="20sp"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/TextColor" />
+
+        <TextView
+            android:id="@+id/StdGroup_item"
+            android:maxLength="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="G"
+            android:textColor="@color/TextColor"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/TextColor" />
+
+        <TextView
+            android:id="@+id/StdID_item"
+            android:maxLength="8"
+            android:layout_width="110dp"
+            android:layout_height="23dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="@color/TextColor"
+            android:textSize="20sp"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/TextColor" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
